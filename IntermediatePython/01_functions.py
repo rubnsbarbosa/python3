@@ -135,3 +135,15 @@ def f1(function):
     return function()
 
 f1(f2)
+
+def ola(nome, maisculo=False):
+
+    if maisculo:
+        msg = f"Olá, {nome}".upper()
+    else:
+        msg = f"Olá, {nome}"
+
+    print(msg)
+
+ola("Grad")
+ola("Groove", maisculo=True)
